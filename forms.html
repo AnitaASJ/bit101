@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>My Forms</title>
+    </head>
+    <body>
+        <h2>Student Registration</h2>
+<form action="#" method="post">
+        <p>First Name:<input type="text" Name="fname" maxlength="50"></p>
+        <p>Last Name:<input type="text" Name="fname" maxlength="50"></p>
+        <p><input type="Submit" value="register now"></p>
+        </form>
+        <form action="#" method="post">
+            <!-- Basic text input -->
+             <p>Full Name:<input type="text" name="fullname" size="30" maxlength="80"> <br></p>
+             <!-- with a pre-filled default value -->
+             <p>City:<input type="text" name="city" placeholder="Kampala" size="20"> <br></p>
+            <!-- Phone number (limited to 14 chars) -->
+             <p>Phone (UG):<input type="text" name="phone" size="16" maxlength="14" placeholder="+256 7XX XXX XXX"> <br></p>
+            <!-- Student ID -->
+             <p>Student No:<input type="text" name="stud_id" size="12" maxlength="10"> <br></p>
+             <p>Password:<input type="password" name="password" size="15" maxlength="30"> <br></p>
+        </form>
+        <p><b>Select your enrolled courses</b></p>
+        <p>Web Technology:<input type="checkbox" name="course" value="web_tech" checked> <br>
+        </p>
+        <p>Database Management:<input type="checkbox" name="course" value="dbms"> <br>
+        </p>
+        <p>Software Engineering:<input type="checkbox" name="course" value="se"> <br>
+        </p>
+        <p>Cloud Computing:<input type="checkbox" name="course" value="cloud"> <br>
+        </p>
+
+        <p><b>Select your Programme Level</b></p>
+        <p>Certificate:<input type="radio" name="level" value="cert"> <br>
+        </p>
+        <p>Diploma:<input type="radio" name="level" value="dip" checked> <br>
+        </p>
+        <p>Degree:<input type="radio" name="level" value="deg"> <br>
+            </p>
+            <p>Masters:<input type="radio" name="level" value="msc"> <br>
+        </p>
+
+        <p><b>Mode of Study:</b></p>
+<p>Day: <Input type="radio" name="mode" value="day" checked></p>
+    <p>Evening: <Input type="radio" name="mode" value="eve"></p>
+        <p>Weekend: <Input type="radio" name="mode" value="wkd"></p>
+
+            <form name="appForm" action="#" method="post">
+                <p>Full Name:<input type="text" name="fname" size="30"> <br></p>
+                <p>Date of Birth:<input type="text" name="dob" size="12"> <br></p>
+
+                <!-- Button with an onclick JavaScript call -->
+                 <input type="Button"
+                 Name="previewBtn"
+                 onclick="previewApplication()">
+
+                 <form action="#" method="post">
+                    Name:<input type="text" name="name" size="30"> <br>
+                     Email:<input type="text" name="email" size="30"> <br>
+                     Comments:<textarea name="comments" rows="4" cols="40"></textarea><br>
+
+                     Rating: <input type="radio" name="rating" value="5"> Excellent
+                      <input type="radio" name="rating" value="3"> Average
+                      <input type="radio" name="rating" value="1"> Poor <br><br>
+                    <input type="SUBMIT" value="Submit Feedback">
+                    <input type="RESET" value="Clear All Fields">
+                 </form>
+            </form>
+
+
+    </body>
+</html>
