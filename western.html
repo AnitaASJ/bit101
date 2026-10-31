@@ -1,9 +1,48 @@
 <html>
     <head>
         <title>ISBAT UNIVERSITY - Student Registration</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <h2>ISBAT University Student Registration Form</h2>
-        <form name="regForm" action="#" method="post" enctype="multipart/form-data"></form>
+        <form name="regForm" action="#" method="post" enctype="multipart/form-data">
+
+       
+        <!--Section 1: Personal Information  -->
+        <h3>Personal Information</h3>
+        <p>First Name: <input type="text" name="fname" size="20" maxlength="50" required></p> <br>
+        <p>Date of Birth:<input type="text" name="dob" size="12" placeholder="DD/MM/YYYY"></p> <br> 
+        <P>NIN:<input type="text" name="nin" size="16" maxlength="14"></P> <br>
+        <p>Phone:<input type="text" name="phone" size="16" maxlength="13" placeholder="+256 7XX XXX XXX"></p> <br>
+        <p>Email: <input type="text" name="email" size="30"></p> <br>
+        <!-- Password -->
+         <p>Create Password:<input type="password" name="pwd" size="20" maxlength="30"></p> <br>
+         <!-- Section 2: Academic Information -->
+          <h3>Academic Information</h3>
+          <p>Programme:<select name="programme" size="1"> <Option Value="">-- Select Programme --
+          </option>
+          </p>
+          <option value="bcs">Bachelor of Computer Science</option>
+          <option value="bit">Bachelor of Information Technology</option>
+          <option value="bai">Bachelor of Artificial Intelligence</option>
+          <option value="dit">Diploma in Information Technology</option>
+          <p>Year of Study:<input type="radio" name="year" value="1"> Year 1</p>
+          <input type="radio" name="year" value="2" checked> Year 2
+          <input type="radio" name="year" value="3"> Year 3
+          <input type="radio" name="year" value="4"> Year 4 <br>
+          <p>Mode of Study:<input type="radio" name="mode" value="day"> Day</p>
+          <input type="radio" name="mode" value="eve"> Evening
+          <input type="radio" name="mode" value="wkd"> weekend <br>
+            <!--Section 3: Supporting Documents -->
+            <h3>Attach Documents</h3>
+            <p>O-Level Certificate<input type="file" name="olevel" accept=".pdf"></p> <br>
+            <p>A-Level or Diploma Certificate<input type="file" name="alevel" accept=".pdf"></p> <br>
+            <p>Passport Photo (JPG/PNG)<input type="file" name="PHOTO" accept="image/*"></p> <br>
+            <!-- Hidden tracking fields -->
+             <input type="hidden" name="campus" value="Kampala-Main">
+             <input type="hidden" name="acad_year" value="2025/2026">
+             <input type="submit" value="Submit Registration">
+             <input type="Reset" value="`Clear Form">
+         </form>
     </body>
 </html>
